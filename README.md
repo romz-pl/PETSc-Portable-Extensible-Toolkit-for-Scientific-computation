@@ -90,7 +90,7 @@ Together, these let a solver developer rely on PETSc for parallel mesh handling,
 The `KSP` object solves $Ax = b$. It supports a wide range of Krylov subspace methods. A Krylov method builds an approximate solution from the subspace
 
 $$
-\mathcal{K}_k(A, r_0) = \operatorname{span}\{r_0, A r_0, A^2 r_0, \dots, A^{k-1} r_0\},
+\mathcal{K}_k(A, r_0) = \text{span}\{r_0, A r_0, A^2 r_0, \dots, A^{k-1} r_0\},
 $$
 
 where $r_0 = b - A x_0$ is the initial residual. Methods in PETSc include:
